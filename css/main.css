@@ -1,0 +1,61 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;/*Esto asegura que el relleno y el borde estan incluidos en el ancho y alto total de los elementos*/
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    height: auto;
+}
+
+.row{
+  position: relative;
+  margin: auto;
+  width: 100%;
+  height: auto;
+  clear: both;
+  display: table;
+}
+
+[class*="col-"]{
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+    float: left;
+    padding: 30px;
+    margin: 10px;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+}
+
+
+.col-1 {
+    width: calc(8.33333333% - 20px);
+    background: yellow;
+}
+.col-2 {
+    width: calc(16.66666666% - 20px);
+    background: #528b32;
+}
+.col-3 {
+    width: calc(25% - 20px);
+    background: #42ae3a;
+}
+.col-4 {
+    width: calc(33.33333333% - 20px);
+    background: #256f6d;
+}
+.col-5 {
+    width: calc(41.666% - 20px);
+}
+.col-6 {
+    width: calc(50% - 20px);
+    background: #822b7f;
+}
+.col-12{
+    width: calc(100% - 20px);
+    background: #be3f7c;
+}
